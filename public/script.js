@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost');
+var socket = io.connect('/');
 var socket_id = parseInt(Math.random() * 10000);
 console.log("what");
 var text1 = new Texter("text1");
