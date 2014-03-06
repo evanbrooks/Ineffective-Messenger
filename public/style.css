@@ -18,7 +18,7 @@ body, html {
   position: absolute;
   max-width: 600px;
   max-height: 250px;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden; }
 
 #text1 {
