@@ -16,8 +16,10 @@ body, html {
   bottom: 0;
   right: 0;
   position: absolute;
-  margin: 5px;
-  overflow: scroll; }
+  max-width: 600px;
+  max-height: 800px;
+  margin: auto;
+  overflow: hidden; }
 
 #text1 {
   border: 1px solid blue;
@@ -29,15 +31,15 @@ body, html {
   #text1 .input {
     border: 1px solid blue; }
 
-#text2 {
-  border: 1px solid red;
-  right: 0; }
-  #text2 footer {
-    border-color: red; }
-  #text2 .self {
-    color: red; }
-  #text2 .input {
-    border: 1px solid red; }
+.scroll {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2.5em;
+  border-bottom: 1px solid blue; }
 
 .texter footer {
   position: absolute;
@@ -45,7 +47,6 @@ body, html {
   left: 0;
   right: 0;
   padding: 0.5em;
-  border-top: 1px solid;
   padding-right: 80px; }
 
 .texter .input {

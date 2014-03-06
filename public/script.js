@@ -9,6 +9,7 @@ function Texter(sel) {
   var self = this;
 
   self.el = document.getElementById(sel);
+  self.scroll = self.el.querySelector(".scroll");
   self.btn = self.el.querySelector("button");
   self.in = self.el.querySelector(".input");
 
@@ -42,7 +43,9 @@ function Texter(sel) {
     var newmsg = document.createElement("div");
     newmsg.innerHTML = msg;
     newmsg.className = "msg self";
-    self.el.appendChild(newmsg);
+
+    self.scroll.appendChild(newmsg);
+    $(".scroll").animate({scrollTop: self.scroll.scrollHeight}, 100);
 
     //self.other.receive(process(msg));
     socket.emit('message', {
@@ -55,7 +58,9 @@ function Texter(sel) {
     var newmsg = document.createElement("div");
     newmsg.innerHTML = msg;
     newmsg.className = "msg other";
-    self.el.appendChild(newmsg);
+
+    self.scroll.appendChild(newmsg);
+    $(".scroll").animate({scrollTop: self.scroll.scrollHeight}, 100);
   }
 
 }

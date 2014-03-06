@@ -16,8 +16,10 @@ body, html
   bottom: 0
   right: 0
   position: absolute
-  margin: 5px
-  overflow: scroll
+  max-width: 600px
+  max-height: 800px
+  margin: auto
+  overflow: hidden
 
 
 #text1
@@ -30,15 +32,16 @@ body, html
   .input
     border: 1px solid blue
 
-#text2 
-  border: 1px solid red
+.scroll
+  // padding-top: 100%
+  overflow: scroll
+  -webkit-overflow-scrolling: touch
+  position: absolute
+  top: 0
+  left: 0
   right: 0
-  footer
-    border-color: red
-  .self 
-    color: red
-  .input
-    border: 1px solid red
+  bottom: 2.5em
+  border-bottom: 1px solid blue 
 
 .texter footer 
   position: absolute
@@ -46,7 +49,6 @@ body, html
   left: 0
   right: 0
   padding: 0.5em
-  border-top: 1px solid
   padding-right: 80px
 
 
