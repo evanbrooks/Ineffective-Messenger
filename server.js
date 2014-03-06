@@ -14,7 +14,7 @@ var express = require('express')
 
 app.use(express.static(__dirname + '/public'));
 
-var server = socketServer.listen(3000, function() {
+var server = socketServer.listen(process.env.PORT || 3000, function() {
     console.log('Listening on port %d', server.address().port);
 });
 
