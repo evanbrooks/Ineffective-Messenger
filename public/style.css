@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  font: inherit; }
+
+html {
+  font: 300 20px/1.3 "Nitti"; }
+
+.texter {
+  width: 320px;
+  height: 568px;
+  position: absolute;
+  margin: 20px;
+  overflow: scroll; }
+
+#text1 {
+  border: 1px solid blue;
+  left: 0; }
+  #text1 footer {
+    border-color: blue; }
+  #text1 .self {
+    color: blue; }
+  #text1 .input {
+    border: 1px solid blue; }
+
+#text2 {
+  border: 1px solid red;
+  right: 0; }
+  #text2 footer {
+    border-color: red; }
+  #text2 .self {
+    color: red; }
+  #text2 .input {
+    border: 1px solid red; }
+
+.texter footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  border-top: 1px solid; }
+
+.texter .input {
+  width: 230px;
+  display: inline-block;
+  background: white; }
+
+.input:focus {
+  outline: none; }
+
+.msg {
+  margin: 0.5em; }
+
+button {
+  background: transparent;
+  border: 0; }
+
+.msg.self {
+  text-align: right; }
